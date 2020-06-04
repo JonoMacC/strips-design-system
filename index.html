@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Website Design System</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="label">
+          <li><a href="#color">Color</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#images">Images</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Intro -->
+      <section id="intro">
+        <article class="main-text">
+          <h1>Design System<span class="brand large">.</span></h1>
+
+          <p class="light">
+            Welcome to the hub for a general website design system. It is
+            intended as a modest start for web and mobile apps.
+          </p>
+          <p>
+            This is a living document, and is most definitely a work in
+            progress.
+          </p>
+        </article>
+      </section>
+
+      <!-- Color Section -->
+      <section id="color">
+        <span class="banner"></span>
+        <h2 class="title">Color</h2>
+        <p>
+          Color is used sparingly to highlight only the most important
+          information. The minimal interface allows the content to step forward
+          and command attention.
+        </p>
+        <!-- Color Table -->
+        <table>
+          <tbody>
+            <tr>
+              <td class="color-primary">
+                <div>
+                  <h6>Primary</h6>
+                  <span class="subtitle">Orange Rust</span>
+                </div>
+                <span class="small">#FFA111</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="color-dark">
+                <h6>Black</h6>
+                <span class="small">#222222</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h6>Background</h6>
+                <span class="small">#FEFEFB</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Typography Section -->
+      <section id="typography">
+        <span class="banner"></span>
+        <h2 class="title">Typography</h2>
+        <h1>Albums</h1>
+        <p class="overline">Original Graphic Novel</p>
+        <h2>A Trip to Venus</h2>
+        <p class="subtitle">179 pages</p>
+        <h3>Chapter VI: In Space</h3>
+        <p class="col-text">
+          Apparently we had reached a great height in the atmosphere, for the
+          sky was a dead black, and the stars had ceased to twinkle. By the same
+          illusion which lifts the horizon of the sea to the level of the
+          spectator on a hillside, the sable cloud beneath was dished out, and
+          the car seemed to float in the middle of an immense dark sphere, whose
+          upper halfwas strewn with silver. Looking down into the dark gulf
+          below, I could see a ruddy light streaming through a rift in the
+          clouds. It was probably a last glimpse of London, or some neighbouring
+          town; but soon the rolling vapours closed, and shut it out.
+        </p>
+        <ul>
+          <li>
+            <h1>H1 / Barlow Black</h1>
+          </li>
+          <li>
+            <h2>H2 / Barlow Bold</h2>
+          </li>
+          <li>
+            <h3>H3 / Barlow Medium</h3>
+          </li>
+          <li>
+            <h4>H4 / Barlow Medium</h4>
+          </li>
+          <li>
+            <h5>H5 / Barlow Regular</h5>
+          </li>
+          <li>
+            <h6>H6 / Barlow Bold</h6>
+          </li>
+          <li>
+            <p>Body / Barlow Regular</p>
+          </li>
+          <li>
+            <p class="small">Body Small / Barlow Regular</p>
+          </li>
+          <li>
+            <p class="subtitle">Subtitle / Barlow Medium</p>
+          </li>
+          <li>
+            <p class="label">Label / Barlow Medium</p>
+          </li>
+          <li>
+            <p class="btn">Button / Barlow Bold</p>
+          </li>
+          <li>
+            <p class="caption">Caption / Barlow Regular</p>
+          </li>
+          <li>
+            <p class="overline">Overline / Barlow Condensed Medium</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Buttons Section -->
+      <section id="buttons">
+        <span class="banner"></span>
+        <h2 class="title">Buttons</h2>
+        <h3>Primary</h3>
+        <ul class="list-horiz">
+          <li>
+            <span class="button primary">Default</span>
+          </li>
+          <li>
+            <span class="button primary hover">Hover</span>
+          </li>
+          <li>
+            <span class="button primary active">Active</span>
+          </li>
+          <li>
+            <span class="button primary disabled">Disabled</span>
+          </li>
+        </ul>
+
+        <h3>Secondary</h3>
+        <ul class="list-horiz">
+          <li>
+            <span class="button secondary">Default</span>
+          </li>
+          <li>
+            <span class="button secondary hover">Hover</span>
+          </li>
+          <li>
+            <span class="button secondary active">Active</span>
+          </li>
+          <li>
+            <span class="button secondary disabled">Disabled</span>
+          </li>
+        </ul>
+
+        <h3>Text</h3>
+        <ul class="list-horiz">
+          <li>
+            <span class="button text">Default</span>
+          </li>
+          <li>
+            <span class="button text hover">Hover</span>
+          </li>
+          <li>
+            <span class="button text active">Active</span>
+          </li>
+          <li>
+            <span class="button text disabled">Disabled</span>
+          </li>
+        </ul>
+
+        <h3>Dropdown</h3>
+        <ul class="list-horiz">
+          <li>
+            <span class="button small icon primary">
+              Default
+              <span id="triangle-down"></span>
+            </span>
+          </li>
+          <li>
+            <span class="button small icon primary hover">
+              Hover
+              <span id="triangle-down"></span>
+            </span>
+          </li>
+          <li>
+            <span class="button small icon primary active">
+              Active
+              <span id="triangle-down"></span>
+            </span>
+          </li>
+
+          <li>
+            <span class="button small icon primary disabled">
+              Disabled
+              <span id="triangle-down"></span>
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Cards Section -->
+      <section id="cards">
+        <span class="banner"></span>
+        <h2 class="title">Cards</h2>
+        <p>
+          Cards organize content into logical groupings, enabling information to
+          be scanned. Cards should be primary actions that lead to content, but
+          they may contain additional actions.
+        </p>
+        <!-- 
+        <section>
+          <h3>Hero Size</h3>
+        </section> -->
+
+        <section>
+          <h3>Full Size</h3>
+
+          <div class="card">
+            <figure>
+              <img
+                src="./resources/images/BTTM-FDRS.jpg"
+                alt="Bottom Feeders Cover Art"
+                type="image/jpeg"
+              />
+            </figure>
+            <article>
+              <span class="overline">Original Graphic Novel</span>
+              <h2>BTTM FDRS</h2>
+              <span class="subtitle">
+                <ul class="list-horiz">
+                  <li>2019</li>
+                  <li class="outline wide">17+</li>
+                  <li>294 pages</li>
+                </ul>
+              </span>
+
+              <p>
+                Once a thriving working class neighborhood on Chicago’s south
+                side, the “Bottomyards” is now the definition of urban blight.
+                When an aspiring fashion designer named Darla and her
+                image-obsessed friend, Cynthia, descend upon the neighborhood in
+                search of cheap rent, they soon discover something far more
+                seductive and sinister lurking behind the walls of their new
+                home.
+              </p>
+              <ul class="list-horiz bottom">
+                <li>
+                  <a class="button primary">Read</a>
+                </li>
+                <li>
+                  <a class="button secondary">Add to List</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h3>Mid Size</h3>
+
+          <div class="card">
+            <figure>
+              <img
+                src="./resources/images/scott-pilgrim.jpg"
+                alt="Scott Pilgrim Volume 1 Cover Art"
+                type="image/jpeg"
+              />
+            </figure>
+            <article>
+              <h2>Scott Pilgrim</h2>
+
+              <h3>Volume 1: Scott Pilgrim's Precious Little Life</h3>
+
+              <ul class="list-horiz bottom">
+                <li>
+                  <a class="button primary">Read Volume</a>
+                </li>
+                <li>
+                  <a class="button secondary">Volumes</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h3>Small Size</h3>
+
+          <div class="card small">
+            <figure>
+              <img
+                src="./resources/images/scott-pilgrim.jpg"
+                alt="Scott Pilgrim Volume 1 Cover Art"
+                type="image/jpeg"
+              />
+            </figure>
+            <article>
+              <h4>Scott Pilgrim</h4>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h3>List Size</h3>
+
+          <div class="card list">
+            <figure>
+              <img
+                src="./resources/images/scott-pilgrim.jpg"
+                alt="Scott Pilgrim Volume 1 Cover Art"
+                type="image/jpeg"
+              />
+            </figure>
+            <article>
+              <h4>Scott Pilgrim</h4>
+              <h5>
+                Volume 1: Scott Pilgrim's Precious Little Life
+              </h5>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h3>Compact List Size</h3>
+
+          <div class="card list compact">
+            <figure>
+              <img
+                src="./resources/images/scott-pilgrim.jpg"
+                alt="Scott Pilgrim Volume 1 Cover Art"
+                type="image/jpeg"
+              />
+            </figure>
+            <article>
+              <h4>Scott Pilgrim</h4>
+              <h5>Volume 1: Scott Pilgrim's Precious Little Life</h5>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <!-- Images Section -->
+      <section id="images">
+        <span class="banner"></span>
+        <h2 class="title">Images</h2>
+        <p>
+          Images may be treated with a halftone effect that evokes old print
+          media. This establishes a sense of brand and can unify diverse sets of
+          images.
+        </p>
+        <figure>
+          <img
+            class="duotoned--peachy"
+            src="./resources/images/as_the_palaces_burn_by_halftone-effect-cropped.png"
+            alt="Comic Book Style Artwork with Halftone Effect"
+            type="image/png"
+          />
+          <figcaption>
+            Original image by
+            <a href="https://www.instagram.com/deathburger/">Josan Gonzalez</a>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p class="small">
+        Hand-coded with ♥ by
+        <a href="https://twitter.com/jonmaccaull">Jon MacCaull</a>. See this
+        project on <a href="#">Github</a>.
+      </p>
+    </footer>
+  </body>
+</html>
