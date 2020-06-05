@@ -8,12 +8,10 @@
   padding: 0;
   background-color: none;
   color: var(--text-dark-color);
-  text-overflow: ellipsis;
 }
 
 html {
   font-size: 16px;
-  /* line-height: 1.5; */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -21,7 +19,6 @@ html {
 body {
   background-color: #fefefb;
   margin: 0 1rem;
-  /* cursor: url("./resources/icons/cursor-open.svg") 22 22, default; */
 }
 
 *,
@@ -37,6 +34,7 @@ body {
 :root {
   --text-dark-color: #222;
   --brand-primary-color: #ffa111;
+  --link-color: #1b68ff;
 }
 
 .duotoned--peachy {
@@ -251,19 +249,20 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.text {
-  color: var(--brand-primary-color);
+.button.text {
+  color: var(--link-color);
+  width: 6rem;
 }
 
 a.text:hover,
 a.text:focus,
 .text.hover {
-  background-color: rgba(255, 161, 17, 0.2);
+  background-color: rgba(27, 104, 255, 0.2);
 }
 
 a.text:active,
 .text.active {
-  background-color: rgba(255, 161, 17, 0.4);
+  background-color: rgba(27, 104, 255, 0.4);
 }
 
 .text.disabled {
@@ -419,38 +418,24 @@ ul > li img {
 
 .color-primary,
 .color-primary * {
-  color: white;
   background-color: var(--brand-primary-color);
 }
 
 .color-dark,
 .color-dark * {
-  color: white;
+  color: rgba(255, 255, 255, 0.87);
   background-color: var(--text-dark-color);
 }
 
-table {
-  border-collapse: collapse;
-}
-
-table,
-thead,
-tbody,
-tr {
+#color li * {
   margin: 0;
-  width: 100%;
 }
 
-td {
+.swatch > li {
   display: flex;
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-}
-
-td *,
-td h6 {
-  margin: 0;
 }
 
 /* Section Styles */
