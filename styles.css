@@ -11,7 +11,6 @@
 }
 
 html {
-  font-size: 16px;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -34,7 +33,7 @@ body {
 :root {
   --text-dark-color: #222;
   --brand-primary-color: #ffa111;
-  --link-color: #1b68ff;
+  --link-color: rgb(97, 49, 21);
 }
 
 .duotoned--peachy {
@@ -147,7 +146,7 @@ a {
 }
 
 .light {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .brand {
@@ -224,6 +223,7 @@ a {
   letter-spacing: 0.125rem;
   width: 8rem;
   height: 2rem;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .button.small {
@@ -241,12 +241,12 @@ a {
 }
 
 .primary {
-  border: 1px solid var(--text-dark-color);
+  background-color: var(--text-dark-color);
+  color: white;
 }
 
 .secondary {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--text-dark-color);
 }
 
 .button.text {
@@ -256,44 +256,30 @@ a {
 
 a.text:hover,
 a.text:focus,
-.text.hover {
-  background-color: rgba(27, 104, 255, 0.2);
-}
-
 a.text:active,
+.text.hover,
 .text.active {
-  background-color: rgba(27, 104, 255, 0.4);
-}
-
-.text.disabled {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: var(--text-dark-color);
+  background-color: rgba(224, 127, 0, 0.5);
 }
 
 a.primary:hover,
 a.primary:focus,
-.primary.hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 a.primary:active,
+.primary.hover,
 .primary.active {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #111111;
 }
 
 .disabled {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 a.secondary:hover,
 a.secondary:focus,
-.secondary.hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
 a.secondary:active,
+.secondary.hover,
 .secondary.active {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Container Styles */
@@ -314,7 +300,7 @@ a.secondary:active,
   max-width: 442px;
   transition: all ease-in-out 0.3s;
   position: relative;
-  border: 1px solid var(--text-dark-color);
+  border: 2px solid var(--text-dark-color);
   top: 0;
   left: 0;
 }
@@ -357,8 +343,17 @@ a.secondary:active,
 .card figure {
   max-height: 220px;
   overflow: hidden;
-  border: 2px solid var(--text-dark-color);
+  border-bottom: 2px solid var(--text-dark-color);
   position: relative;
+}
+
+.card.small figure {
+  border: 2px solid var(--text-dark-color);
+}
+
+.card.list figure,
+.card.list.compact figure {
+  border-right: 2px solid var(--text-dark-color);
 }
 
 img {
